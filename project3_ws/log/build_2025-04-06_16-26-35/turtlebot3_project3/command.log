@@ -1,2 +1,0 @@
-Invoking command in '/home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/leoo/.local/bin/cmake --build /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3 -- -j8 -l8
-Invoked command in '/home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/leoo/.local/bin/cmake --build /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3 -- -j8 -l8
