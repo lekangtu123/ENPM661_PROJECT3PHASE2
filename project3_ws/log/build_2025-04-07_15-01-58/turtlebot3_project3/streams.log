@@ -1,0 +1,206 @@
+[0.024s] Invoking command in '/home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/leoo/.local/bin/cmake --build /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3 -- -j8 -l8
+[0.206s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.219s] [33mCMake Warning (dev) at /opt/ros/galactic/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.219s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.219s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.219s]   the cmake_policy command to set the policy and suppress this warning.
+[0.219s] 
+[0.219s] Call Stack (most recent call first):
+[0.219s]   /opt/ros/galactic/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.220s]   /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.220s]   /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.220s]   /opt/ros/galactic/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.220s]   /opt/ros/galactic/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.220s]   CMakeLists.txt:22 (find_package)
+[0.220s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.220s] [0m
+[0.242s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.354s] [33mCMake Warning (dev) at /home/leoo/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake:441 (message):
+[0.354s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[0.354s]   does not match the name of the calling package (gazebo).  This can lead to
+[0.354s]   problems in calling code that expects `find_package` result variables
+[0.354s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.355s] Call Stack (most recent call first):
+[0.355s]   /home/leoo/.local/lib/python3.8/site-packages/cmake/data/share/cmake-3.30/Modules/FindPkgConfig.cmake:114 (find_package_handle_standard_args)
+[0.355s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[0.355s]   CMakeLists.txt:23 (find_package)
+[0.355s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.355s] [0m
+[0.404s] [33mCMake Warning (dev) at /usr/share/dart/cmake/DARTFindBoost.cmake:24 (find_package):
+[0.404s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[0.404s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[0.405s]   set the policy and suppress this warning.
+[0.405s] 
+[0.405s] Call Stack (most recent call first):
+[0.405s]   /usr/share/dart/cmake/dart_dartComponent.cmake:6 (include)
+[0.405s]   /usr/share/dart/cmake/DARTConfig.cmake:63 (include)
+[0.405s]   /usr/share/dart/cmake/DARTConfig.cmake:123 (dart_traverse_components)
+[0.405s]   /usr/share/dart/cmake/DARTConfig.cmake:171 (dart_package_init)
+[0.405s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:166 (find_package)
+[0.405s]   CMakeLists.txt:23 (find_package)
+[0.405s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.405s] [0m
+[0.436s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart
+[0.473s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:197 (find_package):
+[0.473s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[0.473s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[0.473s]   set the policy and suppress this warning.
+[0.473s] 
+[0.473s] Call Stack (most recent call first):
+[0.473s]   CMakeLists.txt:23 (find_package)
+[0.474s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.474s] [0m
+[0.543s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1")
+[0.547s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.560s] -- Searching for dependencies of ignition-math6
+[0.564s] -- Looking for OGRE...
+[0.571s] -- Found Ogre Ghadamon (1.9.0)
+[0.573s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.573s] [33mCMake Warning (dev) at /usr/share/OGRE/cmake/modules/FindOGRE.cmake:309 (find_package):
+[0.573s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[0.573s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[0.573s]   set the policy and suppress this warning.
+[0.573s] 
+[0.573s] Call Stack (most recent call first):
+[0.573s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:213 (find_package)
+[0.574s]   CMakeLists.txt:23 (find_package)
+[0.574s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.574s] [0m
+[0.579s] [33mCMake Warning (dev) at /usr/share/OGRE/cmake/modules/FindOGRE.cmake:318 (find_package):
+[0.579s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[0.579s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[0.579s]   set the policy and suppress this warning.
+[0.579s] 
+[0.579s] Call Stack (most recent call first):
+[0.579s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:213 (find_package)
+[0.580s]   CMakeLists.txt:23 (find_package)
+[0.580s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.580s] [0m
+[0.584s] -- Looking for OGRE_Paging...
+[0.585s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.585s] -- Looking for OGRE_Terrain...
+[0.585s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.586s] -- Looking for OGRE_Property...
+[0.586s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.586s] -- Looking for OGRE_RTShaderSystem...
+[0.586s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.586s] -- Looking for OGRE_Volume...
+[0.586s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.587s] -- Looking for OGRE_Overlay...
+[0.587s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.779s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.781s] -- Looking for ignition-transport8 -- found version 8.3.0
+[0.781s] -- Searching for dependencies of ignition-transport8
+[0.800s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3")
+[0.811s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.815s] -- Checking for module 'libzmq >= 4'
+[0.837s] --   Found libzmq, version 4.3.2
+[0.889s] -- Checking for module 'uuid'
+[0.907s] --   Found uuid, version 2.34.0
+[0.957s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[0.957s] -- Searching for dependencies of ignition-msgs5
+[0.976s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.984s] -- Checking for module 'tinyxml2'
+[1.002s] --   Found tinyxml2, version 6.2.0
+[1.052s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[1.055s] -- Looking for ignition-common3 -- found version 3.14.2
+[1.055s] -- Searching for dependencies of ignition-common3
+[1.055s] -- Looking for dlfcn.h - found
+[1.056s] -- Looking for libdl - found
+[1.068s] -- Searching for <ignition-common3> component [graphics]
+[1.070s] -- Looking for ignition-common3-graphics -- found version 3.14.2
+[1.071s] -- Searching for dependencies of ignition-common3-graphics
+[1.071s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.076s] -- Looking for ignition-fuel_tools4 -- found version 4.6.0
+[1.076s] -- Searching for dependencies of ignition-fuel_tools4
+[1.124s] -- Checking for module 'jsoncpp'
+[1.141s] --   Found jsoncpp, version 1.7.4
+[1.199s] -- Checking for module 'libzip'
+[1.217s] --   Found libzip, version 1.5.1
+[1.264s] -- Looking for ignition-common3 -- found version 3.14.2
+[1.265s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.265s] -- Looking for ignition-msgs5 -- found version 5.10.0
+[1.269s] -- Found gazebo_ros_pkgs: 3.5.2 (/opt/ros/galactic/share/gazebo_ros_pkgs/cmake)
+[1.271s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[1.313s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.322s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.502s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.623s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[1.698s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.784s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.788s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.817s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.982s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[2.062s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[2.148s] -- Configuring done (2.0s)
+[2.188s] -- Generating done (0.0s)
+[2.189s] -- Build files have been written to: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3
+[2.254s] [100%] Built target turtlebot3_drive
+[2.273s] Invoked command in '/home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/leoo/.local/bin/cmake --build /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3 -- -j8 -l8
+[2.417s] Invoking command in '/home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/leoo/.local/bin/cmake --install /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3
+[2.467s] -- Install configuration: ""
+[2.468s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/lib/turtlebot3_project3/turtlebot3_drive
+[2.468s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//launch
+[2.468s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//launch/spawn_turtlebot3.launch.py
+[2.469s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//launch/empty_world.launch.py
+[2.469s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//launch/robot_state_publisher.launch.py
+[2.469s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//launch/competition_world.launch.py
+[2.470s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models
+[2.470s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/project3
+[2.470s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/project3/meshes
+[2.470s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/project3/meshes/project3-world.STL
+[2.470s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/project3/meshes/project3.STL
+[2.470s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/project3/model.config
+[2.470s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/project3/model.sdf
+[2.470s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_common
+[2.471s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_common/meshes
+[2.471s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_common/meshes/waffle_base.dae
+[2.471s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_common/meshes/r200.dae
+[2.471s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[2.471s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_common/meshes/tire.dae
+[2.471s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_common/meshes/burger_base.dae
+[2.471s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_common/meshes/lds.dae
+[2.472s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_common/model.config
+[2.472s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_world
+[2.472s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_world/meshes
+[2.472s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_world/meshes/wall.dae
+[2.472s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_world/meshes/hexagon.dae
+[2.472s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_world/model-1_4.sdf
+[2.472s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_world/model.config
+[2.473s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_world/model.sdf
+[2.473s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_waffle
+[2.473s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_waffle/model-1_4.sdf
+[2.473s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_waffle/model.config
+[2.473s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//models/turtlebot3_waffle/model.sdf
+[2.473s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//rviz
+[2.473s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//rviz/tb3_gazebo.rviz
+[2.474s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//urdf
+[2.474s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//urdf/common_properties.urdf
+[2.474s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//urdf/turtlebot3_waffle.urdf
+[2.474s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//worlds
+[2.474s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//worlds/empty_world.world
+[2.474s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3//worlds/competition_world.world
+[2.474s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/include/
+[2.474s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/include//turtlebot3_project3
+[2.475s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/include//turtlebot3_project3/turtlebot3_drive.hpp
+[2.475s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/lib/turtlebot3_project3/teleop.py
+[2.475s] -- Installing: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/lib/turtlebot3_project3/proj3p2_tu_Li_ajayi_part1.py
+[2.475s] -- Installing: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/lib/turtlebot3_project3/proj3p2_tu_Li_ajayi_part2.py
+[2.475s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/ament_index/resource_index/package_run_dependencies/turtlebot3_project3
+[2.475s] -- Installing: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/ament_index/resource_index/parent_prefix_path/turtlebot3_project3
+[2.475s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/environment/ament_prefix_path.sh
+[2.475s] -- Installing: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/environment/ament_prefix_path.dsv
+[2.476s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/environment/path.sh
+[2.476s] -- Installing: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/environment/path.dsv
+[2.476s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/local_setup.bash
+[2.476s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/local_setup.sh
+[2.476s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/local_setup.zsh
+[2.476s] -- Installing: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/local_setup.dsv
+[2.476s] -- Installing: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/package.dsv
+[2.477s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/ament_index/resource_index/packages/turtlebot3_project3
+[2.477s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.477s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.477s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/cmake/turtlebot3_project3Config.cmake
+[2.477s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/cmake/turtlebot3_project3Config-version.cmake
+[2.477s] -- Up-to-date: /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/install/turtlebot3_project3/share/turtlebot3_project3/package.xml
+[2.489s] Invoked command in '/home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /home/leoo/.local/bin/cmake --install /home/leoo/Desktop/proj3p2_tu_Li_ajayi/project3_ws/build/turtlebot3_project3
