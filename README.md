@@ -36,6 +36,8 @@ type in your terminal:
 
 ```sh
 cd ~/Desktop/proj3p2_tu_Li_ajayi/project3_ws/src/turtlebot3_project3/scripts
+```
+```sh
 python3 proj3p2_tu_Li_ajayi_part1.py
 ```
 
