@@ -85,4 +85,4 @@ source install/setup.bash
 ```sh
 ros2 launch astar_falcon_planner ros_falcon_astar.launch.py     start_position:="[0.5,1.5,0.0]"     end_position:="[5.0,1.5,0.0]"     robot_radius:=0.105     clearance:=0.10     delta_time:=0.1     wheel_radius:=0.033     wheel_distance:=0.16     rpms:="[60.0,30.0]"
 ```
-
+### NOTE: Please replace the name of the workspace with your own
