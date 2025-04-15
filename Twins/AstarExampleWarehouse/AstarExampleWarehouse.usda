@@ -1,0 +1,32 @@
+#usda 1.0
+(
+    #FalconEditorCompatible
+    defaultPrim = "AstarExampleWarehouse"
+    upAxiz = "Z"
+)
+
+def dtEncapsulation "AstarExampleWarehouse"
+(                 
+)
+{
+    token dtType = "EnvironmentTwin"
+    string dtDescription = ""
+
+    string PythonModule = "AstarExampleWarehouse.AstarExampleWarehouse"
+    string PythonClass = "AstarExampleWarehouse"
+    asset[] PythonPath = [@./@, @../../Twins/@] 
+
+    def dtObjectReference "UAssetWindows"
+    {
+        asset dtAsset = @./Paks/AstarExampleWarehouse_windows_falcon51.pak@
+        string dtScope = "/Game/Maps/AstarExampleWarehouse.AstarExampleWarehouse"
+        string[] dtArchitectures = ["windows", "ue5.3", "falcon5.1"]
+    }
+
+    def dtObjectReference "UAssetLinux"
+    {
+        asset dtAsset = @./Paks/AstarExampleWarehouse_linux_falcon51.pak@
+        string dtScope = "/Game/Maps/AstarExampleWarehouse.AstarExampleWarehouse"
+        string[] dtArchitectures = ["linux", "ue5.3", "falcon5.1"]
+    }
+}

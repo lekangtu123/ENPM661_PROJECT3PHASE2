@@ -1,0 +1,32 @@
+#usda 1.0
+(
+    #FalconEditorCompatible
+    defaultPrim = "Turtlebot3Waffle"
+    upAxiz = "Z"
+)
+
+def dtEncapsulation "Turtlebot3Waffle"
+(                 
+)
+{
+    token dtType = "SystemTwin"
+    string dtDescription = ""
+
+    string PythonModule = "Turtlebot3Waffle.Turtlebot3Waffle"
+    string PythonClass = "Turtlebot3Waffle"
+    asset[] PythonPath = [@./@, @../../Twins/@] 
+
+    def dtObjectReference "UAssetWindows"
+    {
+        asset dtAsset = @./Paks/Turtlebot3Waffle_windows_falcon51.pak@
+        string dtScope = "/Game/Blueprints/BP_Turtlebot3Waffle.BP_Turtlebot3Waffle"
+        string[] dtArchitectures = ["windows", "ue5.3", "falcon5.1"]
+    }
+
+    def dtObjectReference "UAssetLinux"
+    {
+        asset dtAsset = @./Paks/Turtlebot3Waffle_linux_falcon51.pak@
+        string dtScope = "/Game/Blueprints/BP_Turtlebot3Waffle.BP_Turtlebot3Waffle"
+        string[] dtArchitectures = ["linux", "ue5.3", "falcon5.1"]
+    }
+}

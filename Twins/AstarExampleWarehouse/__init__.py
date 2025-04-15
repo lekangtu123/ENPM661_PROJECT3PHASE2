@@ -1,0 +1,1 @@
+from .AstarExampleWarehouse import AstarExampleWarehouse
