@@ -1,0 +1,110 @@
+#usda 1.0
+(
+	#FalconEditorCompatible
+    "Scenario definition"
+    defaultPrim = "Simulation"
+    upAxis = "Z"
+)
+
+def Scope "Simulation"
+{
+	string PythonClass = "AMRPathPlanning"
+	string PythonModule = "AMRPathPlanning"
+	asset[] PythonPath = [@./@, @../../Twins/@]
+
+	def Scope "World"
+	{
+
+		def dtEncapsulation "AstarExampleWarehouse_0"
+		(
+			references = @../../Twins/AstarExampleWarehouse/AstarExampleWarehouse.usda@
+		)
+		{
+			double3 xformOp:translate = (0.0, 0.0, 0.0)
+			double3 xformOp:rotateXYZ = (0.0, 0.0, 0.0)
+			double3 xformOp:scale = (1.0, 1.0, 1.0)
+			token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+		}
+
+		def dtObjectReference "UAssetWindows"
+		{
+			string[] dtArchitectures = ["windows", "ue5.3", "falcon5.1"]
+			asset dtAsset = @./Paks/AMRPathPlanning_windows_falcon51.pak@
+		}
+
+		def dtObjectReference "UAssetLinux"
+		{
+			string[] dtArchitectures = ["linux", "ue5.3", "falcon5.1"]
+			asset dtAsset = @./Paks/AMRPathPlanning_linux_falcon51.pak@
+		}
+	}
+
+	def Scope "Characters"
+	{
+
+		def dtEncapsulation "Turtlebot3Waffle_0"
+		(
+			references = @../../Twins/Turtlebot3Waffle/Turtlebot3Waffle.usda@
+		)
+		{
+			double3 xformOp:translate = (1650.0, 700.0, 0.0)
+			double3 xformOp:rotateXYZ = (0.0, 0.0, 0.0)
+			double3 xformOp:scale = (1.0, 1.0, 1.0)
+			token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def IMUSensor "IMUSensor_BP_C_0"
+            {
+                double pe:Rate = 60.0
+                bool pe:UseBodyFrame = true
+                bool bRos2 = true
+                string ActorLabel = "IMUSensor"
+                
+            string pe:FrameID = "IMUSensor_BP_C_0"
+            string pe:ParentFrameID = "map"
+        
+
+                double3 xformOp:translate = (0.0, 0.0, 0.0)
+                double3 xformOp:rotateXYZ = (0.0, 0.0, 0.0)
+                double3 xformOp:scale = (1.0, 1.0, 1.0)
+                uniform token[] xformOpOrder = ["xformOp:translate","xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+
+        def Pipeline "PipelineRos2Clock"
+        {
+            int pe:NumWorkers = 1
+            def Callback "PublishRos2Clock"
+            {
+                string Topic = "/clock"
+                int QueueSize = 1
+                string pe:Class = "peregrine.pipelines.ros2.callbacks.ROS2ClockPublisher"
+                string NodeName = "clock_publisher_BP_Turtlebot3Waffle_C_0"
+            }
+        }
+        def Pipeline "PipelineRos2TF"
+        {
+            int pe:NumWorkers = 1
+            def Callback "PublishRos2TF"
+            {
+                rel pe:Sensors = [<../../IMUSensor_BP_C_0>]
+                string pe:Class = "peregrine.pipelines.ros2.callbacks.ROS2TransfomPublisher"
+                string NodeName = "tf_publisher_BP_Turtlebot3Waffle_C_0"
+            }
+        }
+                def Pipeline "PipelineRos2_IMUSensor_BP_C_0"
+                {
+                    int pe:NumWorkers = 1
+                    def Callback "PublishRos2_IMUSensor_BP_C_0"
+                    {
+                        string Topic = "IMUSensor_BP_C_0"
+                        int QueueSize = 1
+                        string MsgClass = "sensor_msgs.msg.Imu"
+                        rel pe:Sensor = <../../IMUSensor_BP_C_0>
+                        string pe:Class = "peregrine.pipelines.ros2.callbacks.ROS2SensorPublisher"
+                        string NodeName = "IMUSensor_BP_C_0"
+                    }
+                }
+                
+		}
+	}
+}
