@@ -33,8 +33,11 @@
 
 For Part01:
 type in your terminal: 
-1. cd ~/Desktop/proj3p2_tu_Li_ajayi/project3_ws/src/turtlebot3_project3/scripts
-2. python3 proj3p2_tu_Li_ajayi_part1.py
+
+```sh
+cd ~/Desktop/proj3p2_tu_Li_ajayi/project3_ws/src/turtlebot3_project3/scripts
+python3 proj3p2_tu_Li_ajayi_part1.py
+```
 
 For Part02 gazebo:
 type in your terminal:
