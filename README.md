@@ -4,7 +4,7 @@
     Author 2: Xinze Li UID: 120278136 Directory ID: starli98
     Author 3: Opeyemi Ajayi UID: 117001969 Directory ID: dajayi1
 
-The libraries/dependencies used in part01(proj3p2_tu_Li_ajayi_part1.py):
+## The libraries/dependencies used in part01(proj3p2_tu_Li_ajayi_part1.py):
 
 - numpy (import numpy as np): Used for efficient numerical operations and array manipulations, particularly for handling coordinates, grid maps, and mathematical computations.
 - cv2 (import cv2): Provided by OpenCV, used for image processing tasks such as visualization, drawing maps or paths, and working with images in simulations.
@@ -12,7 +12,7 @@ The libraries/dependencies used in part01(proj3p2_tu_Li_ajayi_part1.py):
 - queue.PriorityQueue (from queue import PriorityQueue): Used to implement the open list in A* pathfinding, ensuring efficient selection of the node with the lowest cost.
 
 
-The libraries/dependencies used in part02 gazebo(proj3p2_tu_Li_ajayi_part2.py):
+## The libraries/dependencies used in part02 gazebo(proj3p2_tu_Li_ajayi_part2.py):
 
 - numpy (import numpy as np): Used for numerical operations, array manipulations, and mathematical processing involved in robot motion and grid map computations.
 - math (import math): Built-in Python math library used for trigonometric and geometric calculations (e.g., sin, cos, sqrt, atan2).
@@ -23,13 +23,13 @@ The libraries/dependencies used in part02 gazebo(proj3p2_tu_Li_ajayi_part2.py):
 - geometry_msgs.msg.Twist: Message type used to publish robot velocity commands (/cmd_vel), controlling linear and angular movement.
 - nav_msgs.msg.Odometry: Message type used to subscribe to the robot’s odometry data (/odom), providing real-time position and orientation feedback.
 
-The libraries/dependencies used in part02 falconsim(astar_planner.py):
+## The libraries/dependencies used in part02 falconsim(astar_planner.py):
 - math (import math): Standard Python math library used for performing mathematical operations such as trigonometric functions, square roots, and angle calculations, which are essential for robot kinematics and geometry.
 - numpy (import numpy as np): A powerful numerical computing library used for array operations, matrix manipulation, and efficient mathematical computations required in path planning and coordinate transformations.
 - queue.PriorityQueue (from queue import PriorityQueue): Provides a priority queue implementation for managing the open list in A* algorithm, ensuring nodes are explored in order of lowest cost.
 
 
-The way to run:
+## The way to run:
 
 For Part01:
 type in your terminal: 
