@@ -43,20 +43,46 @@ python3 proj3p2_tu_Li_ajayi_part1.py
 
 For Part02 gazebo:
 type in your terminal:
-1. cd ~/Desktop/proj3p2_tu_Li_ajayi/project3_ws
-2. colcon build
-3. source /opt/ros/humble/setup.bash
-4. source install/setup.bash
-5. open other terminal, do same operation
-6. In first one: export TURTLEBOT3_MODEL=waffle
-7. In first one: ros2 launch turtlebot3_project3 competition_world.launch.py
-8. In second one: ros2 run turtlebot3_project3 proj3p2_tu_Li_ajayi_part2.py
+```sh
+cd ~/Desktop/proj3p2_tu_Li_ajayi/project3_ws
+```
+```sh
+colcon build
+```
+```sh
+source /opt/ros/humble/setup.bash
+```
+```sh
+source install/setup.bash
+```
+```sh
+open other terminal, do same operation
+```
+```sh
+In first one: export TURTLEBOT3_MODEL=waffle
+```
+```sh
+In first one: ros2 launch turtlebot3_project3 competition_world.launch.py
+```
+```sh
+In second one: ros2 run turtlebot3_project3 proj3p2_tu_Li_ajayi_part2.py
+```
 
 For Part02 falconsim:
 type in your terminal:
-1. cd ~/Desktop/proj3p2_tu_Li_ajayi_falcon/ROS2/falcon_turtlebot3_project_ws
-2. colcon build
-3. source /opt/ros/humble/setup.bash
-4. source install/setup.bash
-5. ros2 launch astar_falcon_planner ros_falcon_astar.launch.py     start_position:="[0.5,1.5,0.0]"     end_position:="[5.0,1.5,0.0]"     robot_radius:=0.105     clearance:=0.10     delta_time:=0.1     wheel_radius:=0.033     wheel_distance:=0.16     rpms:="[60.0,30.0]"
+```sh
+cd ~/Desktop/proj3p2_tu_Li_ajayi_falcon/ROS2/falcon_turtlebot3_project_ws
+```
+```sh
+colcon build
+```
+```sh
+source /opt/ros/humble/setup.bash
+```
+```sh
+source install/setup.bash
+```
+```sh
+ros2 launch astar_falcon_planner ros_falcon_astar.launch.py     start_position:="[0.5,1.5,0.0]"     end_position:="[5.0,1.5,0.0]"     robot_radius:=0.105     clearance:=0.10     delta_time:=0.1     wheel_radius:=0.033     wheel_distance:=0.16     rpms:="[60.0,30.0]"
+```
 
